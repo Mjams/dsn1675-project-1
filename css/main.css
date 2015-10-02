@@ -50,3 +50,8 @@ h2{
 .img{
   width: 100%;
 }
+
+figure{
+  margin-right: 10px;
+  margin-left: 10px;
+}
