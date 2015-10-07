@@ -168,3 +168,44 @@ footer{
     width: 23%
   }
 }
+
+@media print {
+
+  nav {
+    display: none;
+  }
+
+  figure{
+    display: none;
+  }
+
+  img{
+    display: none;
+  }
+
+  .profile{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  footer a::after {
+    content: " (" attr(href) ")";
+  }
+
+  body{
+    border: solid black 1px;
+    width: 3.5in;
+    height: 2in;
+  }
+
+  p{
+    display: none;
+  }
+
+}
