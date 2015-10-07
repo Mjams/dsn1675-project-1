@@ -25,6 +25,8 @@ body{
 }
 
 .nav{
+  max-width: 40em;
+  margin: 0 auto;
   padding-bottom: 0.5em
 }
 
@@ -82,11 +84,21 @@ h2{
   font-size: 1.5rem;
 }
 
+.wrapper{
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+p{
+  font-size: 1rem;
+}
+
 .img{
   width: 100%;
 }
 
 figure{
+  width: 100%;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -109,12 +121,50 @@ footer{
 
 @media only screen and (min-width: 30em) {
 
+  html{
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .profile{
+    width: 250px;
+  }
+
   .logo{
     width: 50px;
     display: block;
     margin: 0.5em;
   }
 
+}
 
+@media only screen and (min-width: 40em){
+
+  figure{
+    float: left;
+    width: 46%;
+  }
+}
+
+@media only screen and (min-width: 60em){
+
+  .profile{
+    float: left;
+    display: inline-block;
+  }
+
+  h1 {
+    padding-bottom: 0.5em;
+    padding-top: 5em;
+    float: left;
+  }
+
+  h2{
+    text-align: left;
+    clear: both;
+  }
+
+  figure{
+    width: 23%
   }
 }
