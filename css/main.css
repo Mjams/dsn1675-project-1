@@ -41,7 +41,7 @@ body{
   padding: 0.5em;
   text-align: center;
   float: left;
-  width: 50%;
+  width: 33%;
   border: solid #26d1b0 5px;
   list-style-type: none;
   display: inline-block;
@@ -94,7 +94,7 @@ p{
 }
 
 .img{
-  width: 100%;
+  width: 95%;
 }
 
 figure{
@@ -110,14 +110,33 @@ figcaption{
 }
 
 .logo{
-  width: 25%;
+  width: 40px;
   display: inline-block;
-  float: left;
+
 }
 
 footer{
   padding: 1em;
 }
+
+.footer{
+  width: 100%;
+}
+
+.footer li {
+  list-style-type: none;
+  float: left;
+  width: 25%;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 25em){
+  .logo{
+    width: 50px;
+  }
+
+}
+
 
 @media only screen and (min-width: 30em) {
 
@@ -132,11 +151,16 @@ footer{
 
   .logo{
     width: 50px;
-    display: block;
     margin: 0.5em;
   }
 
+  .footer{
+    width: 75%;
+    margin: 0 auto;
+  }
+
 }
+
 
 @media only screen and (min-width: 40em){
 
@@ -144,32 +168,40 @@ footer{
     float: left;
     width: 46%;
   }
+
+  .footer{
+    width: 45%;
+  }
 }
 
 @media only screen and (min-width: 60em){
 
-  .profile{
-    float: left;
-    display: inline-block;
-  }
-
-  h1 {
-    padding-bottom: 0.5em;
-    padding-top: 5em;
-    float: left;
-  }
-
-  h2{
-    text-align: left;
-    clear: both;
+  html{
+    font-size: 120%;
+    line-height: 1.5;
   }
 
   figure{
     width: 23%
   }
+
+  .footer{
+    width: 25%
+  }
+
+  .contact{
+    clear: both;
+  }
+
 }
 
 @media print {
+
+  h1{
+    color: black;
+    padding: 0;
+    margin: 0;
+  }
 
   nav {
     display: none;
@@ -190,7 +222,11 @@ footer{
     display: none;
   }
 
-  h2 {
+  .work{
+    display: none;
+  }
+
+  .about{
     display: none;
   }
 
@@ -207,5 +243,10 @@ footer{
   p{
     display: none;
   }
+
+  .contact{
+    color: black;
+  }
+
 
 }
