@@ -25,38 +25,36 @@ body{
 }
 
 .nav{
+  width: 100%;
   max-width: 40em;
   margin: 0 auto;
-  padding-bottom: 0.5em
 }
 
 .nav ul{
   margin: 0;
   padding-left: 0;
-  padding-bottom: 0.5em;
 }
 
 .nav li{
-  background-color: #fff;
-  padding: 0.5em;
-  text-align: center;
-  float: left;
   width: 33%;
-  border: solid #26d1b0 5px;
+  float: left;
   list-style-type: none;
-  display: inline-block;
 }
 
 .nav a{
+  width: 100%;
+  text-align: center;
+  border: solid #26d1b0 5px;
+  display: inline-block;
+  padding: 0.5em;
+  background-color: #fff;
   color:  #26d1b0;
   text-decoration: none;
 }
 
-li:hover {
-  background-color: #26d1b0;
-}
 
 a:hover{
+  background-color: #26d1b0;
   color: #fff;
 }
 
@@ -159,6 +157,13 @@ footer{
     margin: 0 auto;
   }
 
+  .img{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+
+
 }
 
 
@@ -166,11 +171,20 @@ footer{
 
   figure{
     float: left;
-    width: 46%;
+    width: 30%;
   }
 
   .footer{
     width: 45%;
+    clear: both;
+  }
+
+  .contact{
+    clear: both;
+  }
+
+  .img{
+    width: 95%;
   }
 }
 
@@ -181,10 +195,6 @@ footer{
     line-height: 1.5;
   }
 
-  figure{
-    width: 23%
-  }
-
   .footer{
     width: 25%
   }
@@ -192,7 +202,6 @@ footer{
   .contact{
     clear: both;
   }
-
 }
 
 @media print {
@@ -235,7 +244,7 @@ footer{
   }
 
   body{
-    border: solid black 1px;
+    border: dashed black 1px;
     width: 3.5in;
     height: 2in;
   }
@@ -245,8 +254,18 @@ footer{
   }
 
   .contact{
+    text-align: left;
+    padding: 0;
+    font-size: 1rem;
     color: black;
   }
 
+  aside{
+    font-size: 0.75rem;
+  }
+
+  em{
+    display: inline-table;
+  }
 
 }
