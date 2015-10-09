@@ -65,6 +65,7 @@ a:hover{
   margin: 0 auto;
   border-radius: 50%;
   display: block;
+  clear: both;
 }
 
 h1{
